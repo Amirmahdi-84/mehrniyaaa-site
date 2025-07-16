@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>خدمات مهرنیا</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+      font-family: 'Shabnam', sans-serif;
+      background: url('images/galaxy.jpg') no-repeat center center fixed;
+      background-size: cover;
+      overflow-x: hidden;
+      color: #fff;
+    }
+    .stars {
+      background: url('images/stars.png') repeat;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.15;
+      animation: moveStars 60s linear infinite;
+      z-index: 0;
+    }
+    @keyframes moveStars {
+      from { background-position: 0 0; }
+      to { background-position: 1000px 1000px; }
+    }
+    header {
+      position: relative;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 25px;
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+      color: #ffd86e;
+      border-bottom: 2px dashed #ffd86e;
+      z-index: 2;
+    }
+    .container {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+    .product {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      width: 300px;
+      margin: 15px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      transition: 0.3s;
+      border: 1px dashed #ffd86e;
+      backdrop-filter: blur(8px);
+    }
+    .product:hover {
+      transform: translateY(-8px);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      border: 2px solid #ffd86e;
+    }
+    .product h3 {
+      color: #ffd86e;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .product p {
+      color: #f3f3f3;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    .btn-row {
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+    .btn-wa, .btn-tg {
+      flex: 1;
+      text-align: center;
+      background-color: #fff;
+      color: #333;
+      padding: 10px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      font-size: 14px;
+    }
+    .btn-wa:hover {
+      background-color: #25d366;
+      color: white;
+    }
+    .btn-tg:hover {
+      background-color: #0088cc;
+      color: white;
+    }
+    footer {
+      position: relative;
+      background: rgba(0, 0, 0, 0.4);
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #ffd86e;
+      border-top: 2px dashed #ffd86e;
+      z-index: 2;
+    }
+    .planet, .fox {
+      position: fixed;
+      opacity: 0.8;
+      z-index: 1;
+    }
+    .planet {
+      top: 30px;
+      left: 30px;
+      width: 100px;
+    }
+    .fox {
+      bottom: 20px;
+      left: 20px;
+      width: 80px;
+    }
+    @media (max-width: 600px) {
+      .product {
+        width: 90%;
+      }
+      header {
+        font-size: 22px;
+      }
+      .planet, .fox {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="stars"></div>
+
+<header>⭐️ خدمات مهرنیا</header>
+
+<img src="images/little-prince-planet.png" class="planet" alt="سیاره">
+<img src="images/fox.png" class="fox" alt="روباه">
+
+<div class="container">
+
+  <div class="product">
+    <img src="images/printer.jpg" alt="پرینت">
+    <h3>پرینت سیاه و سفید</h3>
+    <p>چاپ با کیفیت در سایز A4 و A5، مناسب برای مقالات و جزوات.</p>
+    <div class="btn-row">
+      <a href="https://wa.me/989032008656" class="btn-wa"><i class="bi bi-whatsapp"></i> واتساپ</a>
+      <a href="https://t.me/Amirjust84" class="btn-tg"><i class="bi bi-telegram"></i> تلگرام</a>
+    </div>
+  </div>
+<div class="product">
+    <img src="images/poster.jpg" alt="پوستر">
+    <h3>طراحی پوستر</h3>
+    <p>طراحی حرفه‌ای برای استوری، فروشگاه، چاپ و تبلیغات.</p>
+    <div class="btn-row">
+      <a href="https://wa.me/989032008656" class="btn-wa"><i class="bi bi-whatsapp"></i> واتساپ</a>
+      <a href="https://t.me/Amirjust84" class="btn-tg"><i class="bi bi-telegram"></i> تلگرام</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="images/word.jpg" alt="ورد">
+    <h3>تایپ و ورد</h3>
+    <p>تایپ پروژه، اکسل، پاورپوینت و پایان‌نامه با دقت بالا.</p>
+    <div class="btn-row">
+      <a href="https://wa.me/989032008656" class="btn-wa"><i class="bi bi-whatsapp"></i> واتساپ</a>
+      <a href="https://t.me/Amirjust84" class="btn-tg"><i class="bi bi-telegram"></i> تلگرام</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="images/factor.jpg" alt="فاکتور">
+    <h3>طراحی فاکتور</h3>
+    <p>طراحی اختصاصی فاکتور با برند شما + پرینت سیاه و سفید.</p>
+    <div class="btn-row">
+      <a href="https://wa.me/989032008656" class="btn-wa"><i class="bi bi-whatsapp"></i> واتساپ</a>
+      <a href="https://t.me/Amirjust84" class="btn-tg"><i class="bi bi-telegram"></i> تلگرام</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="images/logo.jpg" alt="طراحی لوگو">
+    <h3>طراحی لوگو</h3>
+    <p>🧠✨ طراحی سریع، خلاق و ساده با کمک هوش مصنوعی! مخصوص برند شما.</p>
+    <div class="btn-row">
+      <a href="https://wa.me/989032008656" class="btn-wa"><i class="bi bi-whatsapp"></i> واتساپ</a>
+      <a href="https://t.me/Amirjust84" class="btn-tg"><i class="bi bi-telegram"></i> تلگرام</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>آدرس: تهران، اندیشه فاز۱، خیابان هفتم شرقی، پلاک ۳۸</p>
+  <p>ارتباط در واتساپ: <a href="https://wa.me/989032008656">09032008656</a></p>
+  <p>© مهرنیا</p>
+</footer>
+
+</body>
+</html>
