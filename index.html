@@ -87,7 +87,6 @@
       gap: 10px;
       justify-content: space-between;
       margin-top: 15px;
-      flex-wrap: wrap;
     }
     .btn-wa, .btn-tg, .btn-eitaa {
       flex: 1;
@@ -110,7 +109,7 @@
       color: white;
     }
     .btn-eitaa:hover {
-      background-color: #ff8800;
+      background-color: orange;
       color: white;
     }
     footer {
@@ -162,15 +161,14 @@
 
 <div class="container">
 
-  <!-- هر محصول با ۳ دکمه -->
   <div class="product">
     <img src="images/printer.jpg" alt="پرینت">
-<h3>پرینت سیاه و سفید</h3>
+    <h3>پرینت سیاه و سفید</h3>
     <p>چاپ با کیفیت در سایز A4 و A5، مناسب برای مقالات و جزوات.</p>
-    <div class="btn-row">
+<div class="btn-row">
       <a href="https://wa.me/989032008656" class="btn-wa"><i class="bi bi-whatsapp"></i> واتساپ</a>
-      <a href="https://t.me/Amirjust84" class="btn-tg"><i class="bi bi-telegram"></i> تلگرام</a>
-      <a href="https://eitaa.com/Amirjust84" class="btn-eitaa"><i class="bi bi-chat-left-text"></i> ایتا</a>
+      <a href="#" onclick="openTelegram()" class="btn-tg"><i class="bi bi-telegram"></i> تلگرام</a>
+      <a href="https://eitaa.com/Amirjust84" class="btn-eitaa"><i class="bi bi-chat-dots-fill"></i> ایتا</a>
     </div>
   </div>
 
@@ -180,8 +178,8 @@
     <p>طراحی حرفه‌ای برای استوری، فروشگاه، چاپ و تبلیغات.</p>
     <div class="btn-row">
       <a href="https://wa.me/989032008656" class="btn-wa"><i class="bi bi-whatsapp"></i> واتساپ</a>
-      <a href="https://t.me/Amirjust84" class="btn-tg"><i class="bi bi-telegram"></i> تلگرام</a>
-      <a href="https://eitaa.com/Amirjust84" class="btn-eitaa"><i class="bi bi-chat-left-text"></i> ایتا</a>
+      <a href="#" onclick="openTelegram()" class="btn-tg"><i class="bi bi-telegram"></i> تلگرام</a>
+      <a href="https://eitaa.com/Amirjust84" class="btn-eitaa"><i class="bi bi-chat-dots-fill"></i> ایتا</a>
     </div>
   </div>
 
@@ -191,8 +189,8 @@
     <p>تایپ پروژه، اکسل، پاورپوینت و پایان‌نامه با دقت بالا.</p>
     <div class="btn-row">
       <a href="https://wa.me/989032008656" class="btn-wa"><i class="bi bi-whatsapp"></i> واتساپ</a>
-      <a href="https://t.me/Amirjust84" class="btn-tg"><i class="bi bi-telegram"></i> تلگرام</a>
-      <a href="https://eitaa.com/Amirjust84" class="btn-eitaa"><i class="bi bi-chat-left-text"></i> ایتا</a>
+      <a href="#" onclick="openTelegram()" class="btn-tg"><i class="bi bi-telegram"></i> تلگرام</a>
+      <a href="https://eitaa.com/Amirjust84" class="btn-eitaa"><i class="bi bi-chat-dots-fill"></i> ایتا</a>
     </div>
   </div>
 
@@ -202,8 +200,8 @@
     <p>طراحی اختصاصی فاکتور با برند شما + پرینت سیاه و سفید.</p>
     <div class="btn-row">
       <a href="https://wa.me/989032008656" class="btn-wa"><i class="bi bi-whatsapp"></i> واتساپ</a>
-      <a href="https://t.me/Amirjust84" class="btn-tg"><i class="bi bi-telegram"></i> تلگرام</a>
-      <a href="https://eitaa.com/Amirjust84" class="btn-eitaa"><i class="bi bi-chat-left-text"></i> ایتا</a>
+      <a href="#" onclick="openTelegram()" class="btn-tg"><i class="bi bi-telegram"></i> تلگرام</a>
+      <a href="https://eitaa.com/Amirjust84" class="btn-eitaa"><i class="bi bi-chat-dots-fill"></i> ایتا</a>
     </div>
   </div>
 
@@ -213,8 +211,8 @@
     <p>🧠✨ طراحی سریع، خلاق و ساده با کمک هوش مصنوعی! مخصوص برند شما.</p>
     <div class="btn-row">
       <a href="https://wa.me/989032008656" class="btn-wa"><i class="bi bi-whatsapp"></i> واتساپ</a>
-      <a href="https://t.me/Amirjust84" class="btn-tg"><i class="bi bi-telegram"></i> تلگرام</a>
-      <a href="https://eitaa.com/Amirjust84" class="btn-eitaa"><i class="bi bi-chat-left-text"></i> ایتا</a>
+      <a href="#" onclick="openTelegram()" class="btn-tg"><i class="bi bi-telegram"></i> تلگرام</a>
+      <a href="https://eitaa.com/Amirjust84" class="btn-eitaa"><i class="bi bi-chat-dots-fill"></i> ایتا</a>
     </div>
   </div>
 
@@ -222,9 +220,16 @@
 
 <footer>
   <p>آدرس: تهران، اندیشه فاز۱، خیابان هفتم شرقی، پلاک ۳۸</p>
-  <p>ارتباط در واتساپ: <a href="https://wa.me/989032008656">09032008656</a></p>
+  <p>برای ارتباط و ثبت سفارش با ما، از یکی از پیام‌رسان‌ها در بالا استفاده نمایید.</p>
   <p>© مهرنیا</p>
 </footer>
+
+<script>
+  function openTelegram() {
+    alert("برای باز شدن تلگرام، فیلترشکن خود را روشن کنید.");
+    window.location.href = "https://t.me/Amirjust84";
+  }
+</script>
 
 </body>
 </html>
