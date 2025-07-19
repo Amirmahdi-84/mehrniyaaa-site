@@ -42,6 +42,61 @@
       border-bottom: 2px dashed #ffd86e;
       z-index: 2;
     }
+    /* بنر باسلام */
+    .basalam-banner {
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(8px);
+      color: #ffd86e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 18px 25px;
+      font-family: 'Shabnam', sans-serif;
+      animation: slideDown 0.6s ease-out;
+      position: relative;
+      z-index: 999;
+      border-bottom: 2px dashed #ffd86e;
+      margin-bottom: 20px;
+    }
+    .basalam-logo {
+      height: 48px;
+      filter: drop-shadow(0 0 4px #fff);
+    }
+    .basalam-text {
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .basalam-btn {
+      display: inline-block;
+      margin-top: 8px;
+      background-color: #ff9800;
+      color: #fff;
+      padding: 10px 24px;
+      border-radius: 50px;
+      font-size: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      animation: pulseBtn 2s infinite;
+      box-shadow: 0 0 10px rgba(255, 152, 0, 0.5);
+    }
+    .basalam-btn:hover {
+      background-color: #ffb300;
+      color: #222;
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.7);
+    }
+    @keyframes pulseBtn {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.06); }
+      100% { transform: scale(1); }
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
     .container {
       position: relative;
       z-index: 2;
@@ -147,6 +202,11 @@
       .planet, .fox {
         display: none;
       }
+      .basalam-banner {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 20px;
+      }
     }
   </style>
 </head>
@@ -156,6 +216,16 @@
 
 <header>⭐️ خدمات مهرنیا</header>
 
+<!-- بنر باسلام اضافه شده اینجا -->
+<div class="basalam-banner">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Basalam_logo_white.svg/512px-Basalam_logo_white.svg.png" alt="باسلام" class="basalam-logo">
+  <div class="basalam-text">
+    <span>برای اطمینان بیشتر 🌟 غرفه ما را در باسلام ببینید</span>
+    <br>
+    <a href="https://basalam.com/jfriamyar" target="_blank" class="basalam-btn">مشاهده غرفه در باسلام</a>
+  </div>
+</div>
+
 <img src="images/little-prince-planet.png" class="planet" alt="سیاره">
 <img src="images/fox.png" class="fox" alt="روباه">
 
@@ -164,7 +234,7 @@
   <!-- محصول‌ها (مثال: پرینت، پوستر، تایپ، فاکتور، لوگو) -->
   <div class="product">
     <img src="images/printer.jpg" alt="پرینت">
-<h3>پرینت سیاه و سفید</h3>
+    <h3>پرینت سیاه و سفید</h3>
     <p>چاپ با کیفیت در سایز A4 و A5، مناسب برای مقالات و جزوات.</p>
     <div class="btn-row">
       <a href="https://chat.whatsapp.com/F7AhVAt1sfJFhw4tBpYLww?mode=r_c" class="btn-wa"><i class="bi bi-whatsapp"></i> واتساپ</a>
