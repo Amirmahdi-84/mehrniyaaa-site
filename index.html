@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>خدمات مهرنیا</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
   <style>
     body {
       margin: 0;
       padding: 0;
       direction: rtl;
-      font-family: 'Shabnam', sans-serif;
-      background: url('images/galaxy.jpg') no-repeat center center fixed;
+      font-family: "Shabnam", sans-serif;
+      background: url("images/galaxy.jpg") no-repeat center center fixed;
       background-size: cover;
       overflow-x: hidden;
       color: #fff;
     }
     .stars {
-      background: url('images/stars.png') repeat;
+      background: url("images/stars.png") repeat;
       position: fixed;
-      top: 0; left: 0;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       opacity: 0.15;
@@ -28,8 +32,12 @@
       z-index: 0;
     }
     @keyframes moveStars {
-      from { background-position: 0 0; }
-      to { background-position: 1000px 1000px; }
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: 1000px 1000px;
+      }
     }
     header {
       position: relative;
@@ -42,7 +50,6 @@
       border-bottom: 2px dashed #ffd86e;
       z-index: 2;
     }
-    /* بنر باسلام */
     .basalam-banner {
       background: rgba(0, 0, 0, 0.6);
       backdrop-filter: blur(8px);
@@ -53,12 +60,11 @@
       flex-wrap: wrap;
       gap: 20px;
       padding: 18px 25px;
-      font-family: 'Shabnam', sans-serif;
+      font-family: "Shabnam", sans-serif;
       animation: slideDown 0.6s ease-out;
       position: relative;
       z-index: 999;
       border-bottom: 2px dashed #ffd86e;
-      margin-bottom: 20px;
     }
     .basalam-logo {
       height: 48px;
@@ -89,13 +95,25 @@
       box-shadow: 0 0 12px rgba(255, 255, 255, 0.7);
     }
     @keyframes pulseBtn {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.06); }
-      100% { transform: scale(1); }
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.06);
+      }
+      100% {
+        transform: scale(1);
+      }
     }
     @keyframes slideDown {
-      from { transform: translateY(-100%); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
     .container {
       position: relative;
@@ -108,7 +126,7 @@
     .product {
       background: rgba(255, 255, 255, 0.08);
       border-radius: 20px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
       width: 300px;
       margin: 15px;
       padding: 20px;
@@ -143,7 +161,9 @@
       justify-content: space-between;
       margin-top: 15px;
     }
-    .btn-wa, .btn-tg, .btn-eitaa {
+    .btn-wa,
+    .btn-tg,
+    .btn-eitaa {
       flex: 1;
       text-align: center;
       background-color: #fff;
@@ -177,7 +197,8 @@
       border-top: 2px dashed #ffd86e;
       z-index: 2;
     }
-    .planet, .fox {
+    .planet,
+    .fox {
       position: fixed;
       opacity: 0.8;
       z-index: 1;
@@ -199,108 +220,152 @@
       header {
         font-size: 22px;
       }
-      .planet, .fox {
+      .planet,
+      .fox {
         display: none;
-      }
-      .basalam-banner {
-        flex-direction: column;
-        gap: 10px;
-        padding: 15px 20px;
       }
     }
   </style>
 </head>
 <body>
+  <div class="stars"></div>
 
-<div class="stars"></div>
+  <header>⭐️ خدمات مهرنیا</header>
 
-<header>⭐️ خدمات مهرنیا</header>
-
-<!-- بنر باسلام اضافه شده اینجا -->
-<div class="basalam-banner">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Basalam_logo_white.svg/512px-Basalam_logo_white.svg.png" alt="باسلام" class="basalam-logo">
-  <div class="basalam-text">
-    <span>برای اطمینان بیشتر 🌟 غرفه ما را در باسلام ببینید</span>
-    <br>
-    <a href="https://basalam.com/jfriamyar" target="_blank" class="basalam-btn">مشاهده غرفه در باسلام</a>
-  </div>
-</div>
-
-<img src="images/little-prince-planet.png" class="planet" alt="سیاره">
-<img src="images/fox.png" class="fox" alt="روباه">
-
-<div class="container">
-
-  <!-- محصول‌ها (مثال: پرینت، پوستر، تایپ، فاکتور، لوگو) -->
-  <div class="product">
-    <img src="images/printer.jpg" alt="پرینت">
-    <h3>پرینت سیاه و سفید</h3>
-    <p>چاپ با کیفیت در سایز A4 و A5، مناسب برای مقالات و جزوات.</p>
-    <div class="btn-row">
-      <a href="https://chat.whatsapp.com/F7AhVAt1sfJFhw4tBpYLww?mode=r_c" class="btn-wa"><i class="bi bi-whatsapp"></i> واتساپ</a>
-      <a href="#" onclick="openTelegram()" class="btn-tg"><i class="bi bi-telegram"></i> تلگرام</a>
-      <a href="https://eitaa.com/Mehrniya_support" class="btn-eitaa"><i class="bi bi-chat-dots-fill"></i> ایتا</a>
+  <div class="basalam-banner">
+    <img
+      src="images/basalam-logo.png"
+      alt="باسلام"
+      class="basalam-logo"
+    />
+    <div class="basalam-text">
+      <span>برای اطمینان بیشتر 🌟 غرفه ما را در باسلام ببینید</span>
+      <br />
+      <a
+        href="https://basalam.com/jfriamyar"
+        target="_blank"
+        class="basalam-btn"
+        >مشاهده غرفه در باسلام</a
+      >
     </div>
   </div>
 
-  <div class="product">
-    <img src="images/poster.jpg" alt="پوستر">
-    <h3>طراحی پوستر</h3>
-    <p>طراحی حرفه‌ای برای استوری، فروشگاه، چاپ و تبلیغات.</p>
-    <div class="btn-row">
-      <a href="https://chat.whatsapp.com/F7AhVAt1sfJFhw4tBpYLww?mode=r_c" class="btn-wa"><i class="bi bi-whatsapp"></i> واتساپ</a>
-      <a href="#" onclick="openTelegram()" class="btn-tg"><i class="bi bi-telegram"></i> تلگرام</a>
-      <a href="https://eitaa.com/Mehrniya_support" class="btn-eitaa"><i class="bi bi-chat-dots-fill"></i> ایتا</a>
+  <img
+    src="images/little-prince-planet.png"
+    class="planet"
+    alt="سیاره"
+  />
+  <img src="images/fox.png" class="fox" alt="روباه" />
+
+  <div class="container">
+    <!-- محصول‌ها (مثال: پرینت، پوستر، تایپ، فاکتور، لوگو) -->
+    <div class="product">
+      <img src="images/printer.jpg" alt="پرینت" />
+      <h3>پرینت سیاه و سفید</h3>
+      <p>چاپ با کیفیت در سایز A4 و A5، مناسب برای مقالات و جزوات.</p>
+      <div class="btn-row">
+        <a
+          href="https://chat.whatsapp.com/F7AhVAt1sfJFhw4tBpYLww?mode=r_c"
+          class="btn-wa"
+          ><i class="bi bi-whatsapp"></i> واتساپ</a
+        >
+        <a href="#" onclick="openTelegram()" class="btn-tg"
+          ><i class="bi bi-telegram"></i> تلگرام</a
+        >
+        <a href="https://eitaa.com/Mehrniya_support" class="btn-eitaa"
+          ><i class="bi bi-chat-dots-fill"></i> ایتا</a
+        >
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="images/poster.jpg" alt="پوستر" />
+      <h3>طراحی پوستر</h3>
+      <p>طراحی حرفه‌ای برای استوری، فروشگاه، چاپ و تبلیغات.</p>
+      <div class="btn-row">
+        <a
+          href="https://chat.whatsapp.com/F7AhVAt1sfJFhw4tBpYLww?mode=r_c"
+          class="btn-wa"
+          ><i class="bi bi-whatsapp"></i> واتساپ</a
+        >
+        <a href="#" onclick="openTelegram()" class="btn-tg"
+          ><i class="bi bi-telegram"></i> تلگرام</a
+        >
+        <a href="https://eitaa.com/Mehrniya_support" class="btn-eitaa"
+          ><i class="bi bi-chat-dots-fill"></i> ایتا</a
+        >
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="images/word.jpg" alt="ورد" />
+      <h3>تایپ و ورد</h3>
+      <p>تایپ پروژه، اکسل، پاورپوینت و پایان‌نامه با دقت بالا.</p>
+      <div class="btn-row">
+        <a
+          href="https://chat.whatsapp.com/F7AhVAt1sfJFhw4tBpYLww?mode=r_c"
+          class="btn-wa"
+          ><i class="bi bi-whatsapp"></i> واتساپ</a
+        >
+        <a href="#" onclick="openTelegram()" class="btn-tg"
+          ><i class="bi bi-telegram"></i> تلگرام</a
+        >
+        <a href="https://eitaa.com/Mehrniya_support" class="btn-eitaa"
+          ><i class="bi bi-chat-dots-fill"></i> ایتا</a
+        >
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="images/factor.jpg" alt="فاکتور" />
+      <h3>طراحی فاکتور</h3>
+      <p>طراحی اختصاصی فاکتور با برند شما + پرینت سیاه و سفید.</p>
+      <div class="btn-row">
+        <a
+          href="https://chat.whatsapp.com/F7AhVAt1sfJFhw4tBpYLww?mode=r_c"
+          class="btn-wa"
+          ><i class="bi bi-whatsapp"></i> واتساپ</a
+        >
+        <a href="#" onclick="openTelegram()" class="btn-tg"
+          ><i class="bi bi-telegram"></i> تلگرام</a
+        >
+        <a href="https://eitaa.com/Mehrniya_support" class="btn-eitaa"
+          ><i class="bi bi-chat-dots-fill"></i> ایتا</a
+        >
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="images/logo.jpg" alt="لوگو" />
+      <h3>طراحی لوگو</h3>
+      <p>🧠✨ طراحی سریع، خلاق و ساده با کمک هوش مصنوعی! مخصوص برند شما.</p>
+      <div class="btn-row">
+        <a
+          href="https://chat.whatsapp.com/F7AhVAt1sfJFhw4tBpYLww?mode=r_c"
+          class="btn-wa"
+          ><i class="bi bi-whatsapp"></i> واتساپ</a
+        >
+        <a href="#" onclick="openTelegram()" class="btn-tg"
+          ><i class="bi bi-telegram"></i> تلگرام</a
+        >
+        <a href="https://eitaa.com/Mehrniya_support" class="btn-eitaa"
+          ><i class="bi bi-chat-dots-fill"></i> ایتا</a
+        >
+      </div>
     </div>
   </div>
 
-  <div class="product">
-    <img src="images/word.jpg" alt="ورد">
-    <h3>تایپ و ورد</h3>
-    <p>تایپ پروژه، اکسل، پاورپوینت و پایان‌نامه با دقت بالا.</p>
-    <div class="btn-row">
-      <a href="https://chat.whatsapp.com/F7AhVAt1sfJFhw4tBpYLww?mode=r_c" class="btn-wa"><i class="bi bi-whatsapp"></i> واتساپ</a>
-      <a href="#" onclick="openTelegram()" class="btn-tg"><i class="bi bi-telegram"></i> تلگرام</a>
-      <a href="https://eitaa.com/Mehrniya_support" class="btn-eitaa"><i class="bi bi-chat-dots-fill"></i> ایتا</a>
-    </div>
-  </div>
+  <footer>
+    <p>آدرس: تهران، اندیشه فاز۱، خیابان هفتم شرقی، پلاک ۳۸</p>
+    <p>برای ارتباط و ثبت سفارش با ما، از یکی از پیام‌رسان‌ها در بالا استفاده نمایید.</p>
+    <p>© مهرنیا</p>
+  </footer>
 
-  <div class="product">
-    <img src="images/factor.jpg" alt="فاکتور">
-    <h3>طراحی فاکتور</h3>
-    <p>طراحی اختصاصی فاکتور با برند شما + پرینت سیاه و سفید.</p>
-    <div class="btn-row">
-      <a href="https://chat.whatsapp.com/F7AhVAt1sfJFhw4tBpYLww?mode=r_c" class="btn-wa"><i class="bi bi-whatsapp"></i> واتساپ</a>
-      <a href="#" onclick="openTelegram()" class="btn-tg"><i class="bi bi-telegram"></i> تلگرام</a>
-      <a href="https://eitaa.com/Mehrniya_support" class="btn-eitaa"><i class="bi bi-chat-dots-fill"></i> ایتا</a>
-    </div>
-  </div>
-
-  <div class="product">
-    <img src="images/logo.jpg" alt="لوگو">
-    <h3>طراحی لوگو</h3>
-    <p>🧠✨ طراحی سریع، خلاق و ساده با کمک هوش مصنوعی! مخصوص برند شما.</p>
-    <div class="btn-row">
-      <a href="https://chat.whatsapp.com/F7AhVAt1sfJFhw4tBpYLww?mode=r_c" class="btn-wa"><i class="bi bi-whatsapp"></i> واتساپ</a>
-      <a href="#" onclick="openTelegram()" class="btn-tg"><i class="bi bi-telegram"></i> تلگرام</a>
-      <a href="https://eitaa.com/Mehrniya_support" class="btn-eitaa"><i class="bi bi-chat-dots-fill"></i> ایتا</a>
-    </div>
-  </div>
-
-</div>
-
-<footer>
-  <p>آدرس: تهران، اندیشه فاز۱، خیابان هفتم شرقی، پلاک ۳۸</p>
-  <p>برای ارتباط و ثبت سفارش با ما، از یکی از پیام‌رسان‌ها در بالا استفاده نمایید.</p>
-  <p>© مهرنیا</p>
-</footer>
-
-<script>
-  function openTelegram() {
-    alert("برای باز شدن تلگرام، فیلترشکن خود را روشن کنید.");
-    window.location.href = "https://t.me/Mehrniya_support";
-  }
-</script>
-
+  <script>
+    function openTelegram() {
+      alert("برای باز شدن تلگرام، فیلترشکن خود را روشن کنید.");
+      window.location.href = "https://t.me/Mehrniya_support";
+    }
+  </script>
 </body>
 </html>
